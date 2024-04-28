@@ -225,6 +225,11 @@ main {
   transform: translateY(0%);
 }
 
+.portfolio-list:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 /* Хот-барр сайта */
 .header-links,
 .home-color {
@@ -295,7 +300,7 @@ main {
   height: 40px;
 }
 
-.icons:hover:focus {
+.icons:hover:focus:hover {
   background-color: #404bbf;
 }
 
