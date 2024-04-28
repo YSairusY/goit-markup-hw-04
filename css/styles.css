@@ -58,6 +58,8 @@ main {
   border: 1px solid #e7e9fc;
   font-size: 16px;
   display: flex;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -82,6 +84,10 @@ main {
 
 .current {
   position: relative;
+  color: #404bbf;
+}
+
+.current::before {
   color: #404bbf;
 }
 
@@ -333,7 +339,7 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-links {
@@ -359,7 +365,7 @@ main {
 }
 
 .footer-text-container {
-  padding-right: 120px;
+  margin-right: 120px;
 }
 
 .footer-links-container {
