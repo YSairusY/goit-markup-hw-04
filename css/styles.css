@@ -304,7 +304,7 @@ main {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 6px;
+  margin-top: 6px;
 }
 
 .team-list-icons {
@@ -384,7 +384,7 @@ main {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(./images/people-office.jpg);
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
