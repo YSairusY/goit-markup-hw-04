@@ -32,7 +32,7 @@ img {
   max-width: 100%;
 }
 
-button {
+.order-button {
   cursor: pointer;
 }
 
@@ -405,7 +405,7 @@ main {
 }
 
 /* Кнопка заказа */
-button {
+.order-button {
   min-width: 169px;
   height: 56px;
   font-weight: 500;
@@ -422,8 +422,8 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-button:hover,
-button:focus {
+.order-button:hover,
+.order-button:focus {
   background: #404bbf;
 }
 
@@ -557,8 +557,8 @@ button:focus {
   justify-content: center;
   align-items: center;
 
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-overlay.is-open {
@@ -567,13 +567,98 @@ button:focus {
 }
 
 .modal {
-  display: flex;
-  flex-direction: column;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  max-width: 408px;
-  max-height: 584px;
+  width: 408px;
+  min-height: 584px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.text-form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+}
+
+.close-window {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+}
+
+.text-order-window {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-bottom: 16px;
+}
+
+.close-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: none;
+  background-color: #e7e9fc;
+}
+
+.close-button:hover {
+  background-color: #404bbf;
+}
+
+.send-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.send-button {
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  border: none;
+  background-color: #4d5ae5;
+
+  column-gap: 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.checkbox-wrapper {
+  padding-top: 16px;
+}
+
+.checkbox:checked {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.text-checkbox {
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.privacy-text {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
