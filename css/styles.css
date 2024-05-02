@@ -586,17 +586,27 @@ main {
   height: 40px;
 }
 
+.order-form-input:hover,
+.order-form-input:focus {
+  border: 1px solid #4d5ae5;
+}
+
 .text-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 120px;
+  resize: none;
 }
 
 .close-window {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 24px;
+}
+
+.close-window-icon {
+  fill: #2e2f42;
 }
 
 .text-order-window {
@@ -607,6 +617,13 @@ main {
   text-align: center;
   color: #2e2f42;
   padding-bottom: 16px;
+}
+
+.order-form-field-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 6px;
 }
 
 .close-button {

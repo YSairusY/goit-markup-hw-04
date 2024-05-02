@@ -466,32 +466,77 @@
     </footer>
     <form class="modal-overlay">
       <div class="modal">
-        <div class="close-window"><button class="close-button"></button></div>
+        <div class="close-window">
+          <button class="close-button">
+            <svg class="close-window-icon" width="8" height="8">
+              <use href="/images/icons.svg#vector"></use>
+            </svg>
+          </button>
+        </div>
+
         <p class="text-order-window">
           Leave your contacts and we will call you back
         </p>
-        <label for="">
+
+        <label class="order-form-field-label" for="user-first-name">
           Name
-          <input class="order-form-input" type="text" />
+          <input
+            class="order-form-input"
+            id="user-first-name"
+            type="text"
+            required
+            name="user-first-name "
+            pattern="[a-zA-Zа-яА-Я]+"
+            title="Anton"
+          />
         </label>
-        <label for=""
-          >Phone <input class="order-form-input" type="tel" name="" id="" />
+
+        <label class="order-form-field-label" for="user-tel"
+          >Phone
+          <input
+            class="order-form-input"
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="XXX-XXX-XX-XX"
+          />
         </label>
-        <label for=""
-          >Email <input class="order-form-input" type="email" name="" id=""
+
+        <label class="order-form-field-label" for="user-email"
+          >Email
+          <input
+            class="order-form-input"
+            type="email"
+            name="user-email"
+            required
+            id="user-email"
         /></label>
-        <label for=""
+
+        <label class="order-form-field-label" for="text-input"
           >Comment
           <textarea
             class="text-form-input"
-            name=""
+            name="text-input"
             rows="5"
             placeholder="    Text input"
+            id="text-input"
           ></textarea>
         </label>
-        <label class="checkbox-wrapper" for="">
-          <input class="checkbox" type="checkbox" name="" value="" /><span
-            class="text-checkbox"
+
+        <label
+          class="order-form-field-label checkbox-wrapper"
+          for="check-accept"
+        >
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="check-accept"
+            value="privacy"
+            id="check-accept"
+            required
+          /><span class="text-checkbox"
             >I accept the terms and conditions of the
             <span class="privacy-text">Privacy Policy</span></span
           ></label
