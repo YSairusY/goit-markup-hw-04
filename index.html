@@ -464,87 +464,88 @@
         </div>
       </div>
     </footer>
-    <form class="modal-overlay">
+    <div class="modal-overlay">
       <div class="modal">
-        <div class="close-window">
-          <button class="close-button">
-            <svg class="close-window-icon" width="8" height="8">
-              <use href="/images/icons.svg#vector"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="close-button" type="button">
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="/images/icons.svg#icon-vector-3"></use>
+          </svg>
+        </button>
 
-        <p class="text-order-window">
+        <p class="review-text-description">
           Leave your contacts and we will call you back
         </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-first-name"
+              >Name</label
+            >
+            <input
+              class="review-form-input"
+              type="text"
+              id="user-first-name"
+              name="user-first-name"
+              pattern="[a-zA-Zа-яА-Я]+"
+              title="Anton"
+              required
+            />
+          </div>
 
-        <label class="order-form-field-label" for="user-first-name">
-          Name
-          <input
-            class="order-form-input"
-            id="user-first-name"
-            type="text"
-            required
-            name="user-first-name "
-            pattern="[a-zA-Zа-яА-Я]+"
-            title="Anton"
-          />
-        </label>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-tel">Email</label>
+            <input
+              class="review-form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              required
+            />
+          </div>
 
-        <label class="order-form-field-label" for="user-tel"
-          >Phone
-          <input
-            class="order-form-input"
-            type="tel"
-            name="user-tel"
-            id="user-tel"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="XXX-XXX-XX-XX"
-          />
-        </label>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email"
+              >Phone</label
+            >
+            <input
+              class="review-form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="XXX-XXX-XX-XX"
+              required
+            />
+          </div>
 
-        <label class="order-form-field-label" for="user-email"
-          >Email
-          <input
-            class="order-form-input"
-            type="email"
-            name="user-email"
-            required
-            id="user-email"
-        /></label>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-message"
+              id="user-comment"
+              name="user-comment"
+              required
+            ></textarea>
+          </div>
 
-        <label class="order-form-field-label" for="text-input"
-          >Comment
-          <textarea
-            class="text-form-input"
-            name="text-input"
-            rows="5"
-            placeholder="    Text input"
-            id="text-input"
-          ></textarea>
-        </label>
-
-        <label
-          class="order-form-field-label checkbox-wrapper"
-          for="check-accept"
-        >
-          <input
-            class="checkbox"
-            type="checkbox"
-            name="check-accept"
-            value="privacy"
-            id="check-accept"
-            required
-          /><span class="text-checkbox"
-            >I accept the terms and conditions of the
-            <span class="privacy-text">Privacy Policy</span></span
-          ></label
-        >
-        <div class="send-btn-wrapper">
-          <button class="send-button"></button>
-        </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="review-form-checkbox-label" for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="review-form-submit" type="submit">Send</button>
+        </form>
       </div>
-    </form>
+    </div>
   </body>
 </html>
