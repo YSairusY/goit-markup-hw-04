@@ -732,7 +732,9 @@ main {
   fill: transparent;
 }
 
-.review-form-checkbox:checked + .review-form-own-checkbox {
+.review-form-checkbox:checked
+  + .review-form-checkbox-label
+  .review-form-own-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
