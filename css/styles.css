@@ -611,6 +611,7 @@ main {
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
+  border: none;
   fill: #ffffff;
 }
 
@@ -630,7 +631,7 @@ main {
 }
 
 .review-form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .review-form-field-label {
@@ -731,9 +732,7 @@ main {
   fill: transparent;
 }
 
-.review-form-checkbox:checked
-  + .review-form-checkbox-label
-  .review-form-own-checkbox {
+.review-form-checkbox:checked + .review-form-own-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
